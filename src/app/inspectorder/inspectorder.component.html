@@ -1,0 +1,16 @@
+<ion-item *ngIf="inspectorder" [routerLink]="'/inspectdetail/' + inspectorder.inspdetid" [detail]="false">
+   <!-- <div slot="start" [class]="!message.read ? 'dot dot-unread' : 'dot'"></div>-->
+    <ion-label class="ion-text-wrap">
+      <h2>
+        {{ inspectorder.id }}
+        <span class="date">
+          <ion-note>{{ inspectorder.status }}</ion-note>
+          <ion-icon name="chevron-forward" size="small" *ngIf="isIos()"></ion-icon>
+        </span>
+      </h2>
+      <h3>Property Id: {{ inspectorder.propid }}</h3>
+      <p>
+       Creation Time: {{inspectorder.creationTime}}
+      </p>
+    </ion-label>
+    </ion-item>

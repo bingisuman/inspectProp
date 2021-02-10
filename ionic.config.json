@@ -1,5 +1,5 @@
 {
-  "name": "Temp",
+  "name": "inspectProp",
   "integrations": {
     "capacitor": {}
   },

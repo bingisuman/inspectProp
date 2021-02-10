@@ -1,0 +1,343 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateInspectionOrder(
+  $input: CreateInspectionOrderInput!
+  $condition: ModelInspectionOrderConditionInput
+) {
+  createInspectionOrder(input: $input, condition: $condition) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+mutation UpdateInspectionOrder(
+  $input: UpdateInspectionOrderInput!
+  $condition: ModelInspectionOrderConditionInput
+) {
+  updateInspectionOrder(input: $input, condition: $condition) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+mutation DeleteInspectionOrder(
+  $input: DeleteInspectionOrderInput!
+  $condition: ModelInspectionOrderConditionInput
+) {
+  deleteInspectionOrder(input: $input, condition: $condition) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+mutation CreateInspectionDetail(
+  $input: CreateInspectionDetailInput!
+  $condition: ModelInspectionDetailConditionInput
+) {
+  createInspectionDetail(input: $input, condition: $condition) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+mutation UpdateInspectionDetail(
+  $input: UpdateInspectionDetailInput!
+  $condition: ModelInspectionDetailConditionInput
+) {
+  updateInspectionDetail(input: $input, condition: $condition) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+mutation DeleteInspectionDetail(
+  $input: DeleteInspectionDetailInput!
+  $condition: ModelInspectionDetailConditionInput
+) {
+  deleteInspectionDetail(input: $input, condition: $condition) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+mutation CreateProperty(
+  $input: CreatePropertyInput!
+  $condition: ModelPropertyConditionInput
+) {
+  createProperty(input: $input, condition: $condition) {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateProperty(
+  $input: UpdatePropertyInput!
+  $condition: ModelPropertyConditionInput
+) {
+  updateProperty(input: $input, condition: $condition) {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteProperty(
+  $input: DeletePropertyInput!
+  $condition: ModelPropertyConditionInput
+) {
+  deleteProperty(input: $input, condition: $condition) {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

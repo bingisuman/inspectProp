@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-inspectprop-dev-190527-authRole",
+      "UnauthRoleArn": "arn:aws:iam::546474561415:role/amplify-inspectprop-dev-190527-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::546474561415:role/amplify-inspectprop-dev-190527-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-inspectprop-dev-190527-deployment",
+      "UnauthRoleName": "amplify-inspectprop-dev-190527-unauthRole",
+      "StackName": "amplify-inspectprop-dev-190527",
+      "StackId": "arn:aws:cloudformation:us-east-1:546474561415:stack/amplify-inspectprop-dev-190527/e7d034d0-6a72-11eb-9ff2-0e879b0972ad",
+      "AmplifyAppId": "dgdktec171dun"
+    },
+    "categories": {
+      "auth": {
+        "inspectprop43f7722d": {}
+      }
+    }
+  }
+}

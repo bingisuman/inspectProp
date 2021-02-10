@@ -1,0 +1,382 @@
+# this is an auto generated file. This will be overwritten
+query SyncInspectionOrders(
+  $filter: ModelInspectionOrderFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncInspectionOrders(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      propid
+      inspdetid
+      status
+      inspectionofficer
+      inspectionrequestor
+      creationTime
+      property {
+        id
+        propid
+        streetaddress
+        city
+        state
+        zip
+        country
+        propname
+        loannumber
+        Orginalupb
+        buildingcount
+        builtyear
+        floorcount
+        lender
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      inspectiondetail {
+        id
+        curbcomments
+        curbrating
+        curbtrend
+        generalcomments
+        inspectiontime
+        mechsystemcomments
+        mechsystemraing
+        mechsystemtrend
+        proprating
+        sitecomments
+        siterating
+        sitetrend
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+        owner
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetInspectionOrder($id: ID!) {
+  getInspectionOrder(id: $id) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+query ListInspectionOrders(
+  $filter: ModelInspectionOrderFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listInspectionOrders(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      propid
+      inspdetid
+      status
+      inspectionofficer
+      inspectionrequestor
+      creationTime
+      property {
+        id
+        propid
+        streetaddress
+        city
+        state
+        zip
+        country
+        propname
+        loannumber
+        Orginalupb
+        buildingcount
+        builtyear
+        floorcount
+        lender
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      inspectiondetail {
+        id
+        curbcomments
+        curbrating
+        curbtrend
+        generalcomments
+        inspectiontime
+        mechsystemcomments
+        mechsystemraing
+        mechsystemtrend
+        proprating
+        sitecomments
+        siterating
+        sitetrend
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+        owner
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncInspectionDetails(
+  $filter: ModelInspectionDetailFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncInspectionDetails(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetInspectionDetail($id: ID!) {
+  getInspectionDetail(id: $id) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+query ListInspectionDetails(
+  $filter: ModelInspectionDetailFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listInspectionDetails(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncProperties(
+  $filter: ModelPropertyFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncProperties(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetProperty($id: ID!) {
+  getProperty(id: $id) {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListPropertys(
+  $filter: ModelPropertyFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPropertys(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}

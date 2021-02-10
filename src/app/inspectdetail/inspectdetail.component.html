@@ -1,0 +1,171 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+ <!-- <ion-content [fullscreen]="true" *ngIf="inspectiondetail">
+    <ion-item>
+      <ion-icon name="person-circle" color="primary"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <h2>
+          {{ inspectiondetail.id }}
+          <span class="date">
+            <ion-note>{{ inspectiondetail.inspectiontime }}</ion-note>
+          </span>
+        </h2>
+        <h3>To: <ion-note>Me</ion-note></h3>
+      </ion-label>
+    </ion-item>
+    
+    <div class="ion-padding">
+      <h1>{{ inspectiondetail.generalcomments }}</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </ion-content> -->
+
+  <ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1">
+        <ion-buttons data-comp-id="buttons.1" left>
+            <button (click)="action('back')" data-comp-id="button.1" ion-button icon-only style="font-size: 24px;">
+                <ion-icon class="ion-ios-arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1" text-center>
+            <div data-comp-id="text.1" ion-text>Property Inspection Form</div>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.2" right>
+            <button (click)="action('home')" data-comp-id="button.2" ion-button icon-only style="font-size: 24px;">
+                <ion-icon class="ion-md-home"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content
+    class="content-secondary" data-comp-id="content.1">
+    <!-- <ion-list data-comp-id="list.1" style="padding: 3%;">
+                <ion-item data-comp-id="toggle.1" style="margin: 0 0 10px 0;">
+                    <ion-label>Toggle</ion-label>
+                    <ion-toggle [(ngModel)]="data.Inspection"></ion-toggle>
+                </ion-item>
+            </ion-list> -->
+    <ion-list data-comp-id="list.1" style="padding: 3%;">
+        <ion-list-header color="secondary" data-comp-id="list-header.1">
+            <span data-comp-id="text.2" ion-text>Property Details</span>
+        </ion-list-header>
+        <ion-item data-comp-id="input.1">
+            <ion-label color="dark">Property ID</ion-label>
+            <ion-input [(ngModel)]="data.inputOne" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.2">
+            <ion-label color="dark">Property Name</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.3">
+            <ion-label color="dark">Street Address</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.4">
+            <ion-label color="dark">City</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.5">
+            <ion-label color="dark">State</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.6">
+            <ion-label color="dark">Zip Code</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.7">
+            <ion-label color="dark">Country</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-list data-comp-id="list.2" style="padding: 3%;">
+        <ion-list-header color="secondary" data-comp-id="list-header.2">
+            <span data-comp-id="text.3" ion-text>Additional Details</span>
+        </ion-list-header>
+        <ion-item data-comp-id="input.8">
+            <ion-label color="dark">Original UPB</ion-label>
+            <ion-input [(ngModel)]="data.inputOne" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.9">
+            <ion-label color="dark">Building Count</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.10">
+            <ion-label color="dark">Built Year</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.11">
+            <ion-label color="dark">Floor Count</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-list data-comp-id="list.3" style="padding: 3%;">
+        <ion-list-header color="secondary" data-comp-id="list-header.3">
+            <span data-comp-id="text.4" ion-text>Inspection Details</span>
+        </ion-list-header>
+        <ion-item data-comp-id="input.12">
+            <ion-label color="dark">Curb comments</ion-label>
+            <ion-input [(ngModel)]="data.inputOne" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.13">
+            <ion-label color="dark">Curb Rating</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.14">
+            <ion-label color="dark">Curb trend</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.15">
+            <ion-label color="dark">Mechanical System Comments</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.16">
+            <ion-label color="dark">Mechanical System Trend</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.17">
+            <ion-label color="dark">Mechanical System Rating</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.18">
+            <ion-label color="dark">Site Comments</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.19">
+            <ion-label color="dark">Site Trend</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.20">
+            <ion-label color="dark">Site Rating</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.21">
+            <ion-label color="dark">General Comment</ion-label>
+            <ion-input [(ngModel)]="data.inputTwo" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="datetime.1">
+            <ion-label color="dark">
+                Inspection Date Time</ion-label>
+            <ion-datetime [(ngModel)]="data.date" displayFormat="YYYY-MM-DD" max="2100-12-12" min="1900-01-01" pickerFormat="YYYY-MM-DD"></ion-datetime>
+        </ion-item>
+    </ion-list>
+    <ion-fab bottom data-comp-id="fab-group.1" left>
+        <button (click)="action('cancel')" color="dark" data-comp-id="fab-button.1" icon-only ion-fab outline style="margin: 0px;">
+            <ion-icon class="ion-ios-arrow-back"></ion-icon>
+        </button>
+    </ion-fab>
+    <ion-fab bottom data-comp-id="fab-group.2" right>
+        <button (click)="action('submit')" data-comp-id="fab-button.2" icon-only ion-fab>
+            <ion-icon class="ion-ios-arrow-forward"></ion-icon>
+        </button>
+    </ion-fab>
+</ion-content>
+  

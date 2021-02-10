@@ -1,0 +1,44 @@
+type InspectionOrder @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  propid: ID!
+  inspdetid: ID!
+  status: String!
+  inspectionofficer: String
+  inspectionrequestor: String
+  creationTime: AWSDateTime
+  property: Property @connection(fields: ["propid"])
+  inspectiondetail: InspectionDetail @connection(fields: ["inspdetid"])
+}
+
+type InspectionDetail @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  curbcomments: String
+  curbrating: Int
+  curbtrend: String
+  generalcomments: String
+  inspectiontime: AWSDateTime
+  mechsystemcomments: String
+  mechsystemraing: Int
+  mechsystemtrend: String
+  proprating: Int
+  sitecomments: String
+  siterating: Int
+  sitetrend: String
+}
+
+type Property @model {
+  id: ID!
+  propid: ID!
+  streetaddress: String!
+  city: String!
+  state: String!
+  zip: Int!
+  country: String!
+  propname: String!
+  loannumber: String
+  Orginalupb: Float
+  buildingcount: Int
+  builtyear: Int
+  floorcount: Int
+  lender: String
+}

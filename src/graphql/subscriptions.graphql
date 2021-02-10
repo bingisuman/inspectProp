@@ -1,0 +1,316 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateInspectionOrder($owner: String!) {
+  onCreateInspectionOrder(owner: $owner) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+subscription OnUpdateInspectionOrder($owner: String!) {
+  onUpdateInspectionOrder(owner: $owner) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+subscription OnDeleteInspectionOrder($owner: String!) {
+  onDeleteInspectionOrder(owner: $owner) {
+    id
+    propid
+    inspdetid
+    status
+    inspectionofficer
+    inspectionrequestor
+    creationTime
+    property {
+      id
+      propid
+      streetaddress
+      city
+      state
+      zip
+      country
+      propname
+      loannumber
+      Orginalupb
+      buildingcount
+      builtyear
+      floorcount
+      lender
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    inspectiondetail {
+      id
+      curbcomments
+      curbrating
+      curbtrend
+      generalcomments
+      inspectiontime
+      mechsystemcomments
+      mechsystemraing
+      mechsystemtrend
+      proprating
+      sitecomments
+      siterating
+      sitetrend
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+      owner
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+subscription OnCreateInspectionDetail($owner: String!) {
+  onCreateInspectionDetail(owner: $owner) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+subscription OnUpdateInspectionDetail($owner: String!) {
+  onUpdateInspectionDetail(owner: $owner) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+subscription OnDeleteInspectionDetail($owner: String!) {
+  onDeleteInspectionDetail(owner: $owner) {
+    id
+    curbcomments
+    curbrating
+    curbtrend
+    generalcomments
+    inspectiontime
+    mechsystemcomments
+    mechsystemraing
+    mechsystemtrend
+    proprating
+    sitecomments
+    siterating
+    sitetrend
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    owner
+  }
+}
+subscription OnCreateProperty {
+  onCreateProperty {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProperty {
+  onUpdateProperty {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProperty {
+  onDeleteProperty {
+    id
+    propid
+    streetaddress
+    city
+    state
+    zip
+    country
+    propname
+    loannumber
+    Orginalupb
+    buildingcount
+    builtyear
+    floorcount
+    lender
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
